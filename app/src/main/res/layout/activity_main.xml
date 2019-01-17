@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lj.ble_socket.MainActivity"
+    >
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClick_Search"
+        android:text="扫描设备!"
+         />
+
+    <ListView
+        android:id="@+id/lvDevices"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_marginTop="10.0dip"
+        android:background="@drawable/preference_first_item"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvDataName1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8.0dip"
+            android:text="X轴："
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@+id/tvNum1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="8.0dip"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:background="@drawable/preference_item"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvDataName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8.0dip"
+            android:text="Y轴："
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@+id/tvNum2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="8.0dip"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:background="@drawable/preference_item"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvDataName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8.0dip"
+            android:text="Z轴："
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@+id/tvNum3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="8.0dip"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60.0dip"
+        android:layout_marginBottom="10.0dip"
+        android:background="@drawable/preference_last_item"
+        android:clickable="true"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvDataName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8.0dip"
+            android:text="温度："
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+
+        <TextView
+            android:id="@+id/tvNum4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="8.0dip"
+            android:text="0"
+            android:textColor="#ff000000"
+            android:textSize="17.0sp" />
+    </RelativeLayout>
+</LinearLayout>
